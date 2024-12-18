@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #6c1d8e; /* Purple Background */
+    color: #ffffff; /* White Text */
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Team Section */
+  .project-section {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+  
+  /* Scrollable Container */
+  .project-scroll-container {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    overflow-x: auto; /* Allows scroll, hides scrollbar */
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide scrollbar (Firefox) */
+  }
+  
+  .project-scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar (Chrome/Safari) */
+  }
+  
+  /* Team Card */
+  .project-card {
+    background-color: #d5a7f4; /* Light Purple */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    min-width: 25vw; /* Bigger Cards */
+    max-width: 25vw;
+    text-align: left;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background-color: #b45dcf; /* Darker Shade */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  
+  .info {
+    margin-top: 1rem;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6c1d8e;
+  }
+  
+  .details {
+    font-size: 0.8rem;
+    color: #4d126a;
+    margin-bottom: 1rem;
+    min-height: 2rem;
+  }
+  
+  /* View Details Button */
+  .view-button {
+    background-color: #ff8c00;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #e67e00;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .project-card {
+      min-width: 60vw;
+      max-width: 60vw;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .project-card {
+      min-width: 20vw;
+      max-width: 20vw;
+    }
+  }
+  

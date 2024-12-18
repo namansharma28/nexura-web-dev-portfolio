@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #6c1d8e; /* Purple Background */
+    color: #ffffff; /* White Text */
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Section Styling */
+  .team-section {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1.5rem; /* Responsive Title Size */
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    line-height: 1.4;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  
+  /* Team Container */
+  .team-container {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 3vw;
+    flex-wrap: wrap;
+  }
+  
+  /* Team Cards */
+  .team-card {
+    background-color: #d5a7f4; /* Light Purple Card */
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 20vw;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+  
+  .team-card:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+  }
+  
+  .info {
+    margin-top: 1rem;
+  }
+  
+  .name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #6c1d8e; /* Darker Purple */
+  }
+  
+  .role {
+    font-size: 1.1rem;
+    color: #4d126a; /* Slightly Darker Text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .team-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-card {
+      max-width: 80vw;
+      padding: 2vw;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .team-card {
+      max-width: 18vw;
+    }
+  }
+  

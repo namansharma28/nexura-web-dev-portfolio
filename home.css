@@ -1,0 +1,95 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #741a9e; /* Purple background */
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Section Wrapper */
+  .portfolio-section {
+    padding: 50px 20px;
+    text-align: left;
+  }
+  .logo-large {
+    height: 500px;
+    z-index: -10;
+    position: absolute;
+    left:-20%;
+  }
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Title Styling */
+  .portfolio-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .portfolio-title strong {
+    text-decoration: underline;
+  }
+  
+  /* Paragraph Styling */
+  .portfolio-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Button Styling */
+  .button-container {
+    margin-top: 1.5rem;
+  }
+  
+  .explore-btn {
+    display: inline-block;
+    background-color: #97929993; /* Orange button */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #e28310; /* Darker orange on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portfolio-title {
+      font-size: 1.8rem;
+    }
+  
+    .portfolio-description {
+      font-size: 1rem;
+    }
+  
+    .explore-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-title {
+      font-size: 1.5rem;
+    }
+  
+    .portfolio-description {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Showcase</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <!-- Team Section -->
+  <nav class="navbar">
+    <div class="logo">
+        <!-- Add your logo image here -->
+        <img src="logo.png" alt="Logo" class="logo-img">
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html" class="nav-item">Home</a></li>
+      <li><a href="about.html" class="nav-item">About</a></li>
+      <li><a href="project.html" class="nav-item">Projects</a></li>
+      <li><a href="team.html" class="nav-item">Team</a></li>
+      <li><a href="contact.html" class="nav-item">Contact</a></li>
+    </ul>
+</nav>
+<section class="project-section">
+    <h2 class="section-title">The Projects Section showcases our team's creativity and innovation through a collection of impactful and visually engaging projects. Each project card highlights the key work we've done, offering a brief description, relevant images, and a collection to explore more</h2>
+    <div class="project-scroll-container">
+      <!-- Project Cards -->
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div><div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="image-container">
+          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
+        </div>
+        <div class="info">
+          <p class="name">Project 1</p>
+          <p class="details">Project details</p>
+          <button class="view-button">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+    const scrollContainer = document.querySelector('.project-scroll-container');
+  
+    scrollContainer.addEventListener('wheel', (event) => {
+      event.preventDefault();
+      scrollContainer.scrollLeft += event.deltaY;
+    });
+  </script>  
+</html>
