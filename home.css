@@ -39,7 +39,11 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
 }
-
+.tagline {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
 .nav-links {
     display: flex;
     list-style: none;
