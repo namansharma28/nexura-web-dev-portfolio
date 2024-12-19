@@ -55,7 +55,7 @@ a {
 }
 
 .contact-details h1 {
-    color: #f90;
+    color: gold;
     font-size: 2.7rem;
     margin-bottom: 40px;
 }
@@ -132,7 +132,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #e58000;
+    background-color: gold;
 }
 
 @media (max-width: 768px) {

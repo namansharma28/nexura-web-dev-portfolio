@@ -22,7 +22,7 @@ body {
     padding: 10px 20px;
 }
 .act{
-    color: #e58900;
+    color: gold;
 }
 
 .logo {
@@ -43,6 +43,8 @@ body {
   text-align: center;
   font-size: large;
   font-weight: 600;
+  color: rgb(204, 200, 200);
+  text-shadow: 0 0 4px rgb(189, 21, 189);
 }
 .nav-links {
     display: flex;
@@ -61,7 +63,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: purple;
+    color: gold;
 }
 
 
@@ -111,7 +113,7 @@ body {
    
     .container {
       display: flex;
-     margin-top: 4rem;
+      margin-top: 4rem;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
@@ -163,7 +165,7 @@ body {
     }
 
     .btn:hover {
-      background-color: #e58900;
+      background-color: gold;
     }
 
    

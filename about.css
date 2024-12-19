@@ -14,7 +14,7 @@
   
   /* Section Wrapper */
   .portfolio-section {
-    padding: 50px 20px;
+    padding: 5rem 20px;
     text-align: center;
   }
   
@@ -22,7 +22,9 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  
+  .classification {
+    color: rgb(253, 203, 5);
+  }
   /* Title Styling */
   .portfolio-title {
     font-size: 2rem;
@@ -56,7 +58,7 @@
   }
   
   .explore-btn:hover {
-    background-color: #e28310; /* Darker orange on hover */
+    background-color: gold; /* Darker orange on hover */
     transform: scale(1.05);
   }
   
