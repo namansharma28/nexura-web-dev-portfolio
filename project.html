@@ -6,6 +6,9 @@
   <title>Team Showcase</title>
   <link rel="stylesheet" href="project.css">
   <link rel="stylesheet" href="navbar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="projects.js"></script>
+
 </head>
 <body>
   <!-- Team Section -->
@@ -42,6 +45,7 @@
     });
   </script>
 <section class="project-section">
+  <h1 class="title">Our Projects</h1>
     <h2 class="section-title">The Projects Section showcases our team's creativity and innovation through a collection of impactful and visually engaging projects. Each project card highlights the key work we've done, offering a brief description, relevant images, and a collection to explore more</h2>
     <div class="project-scroll-container">
       <!-- Project Cards -->
@@ -52,7 +56,7 @@
         <div class="info">
           <p class="name">Project 1</p>
           <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
+          <button id="openPopup" class="details-btn">View Details</button>
         </div>
       </div>
       <div class="project-card">
@@ -60,9 +64,9 @@
           <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
         </div>
         <div class="info">
-          <p class="name">Project 1</p>
+          <p class="name">Project 2</p>
           <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
+          <button class="details-btn">View Details</button>
         </div>
       </div>
       <div class="project-card">
@@ -70,61 +74,19 @@
           <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
         </div>
         <div class="info">
-          <p class="name">Project 1</p>
+          <p class="name">Project 3</p>
           <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="image-container">
-          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
-        </div>
-        <div class="info">
-          <p class="name">Project 1</p>
-          <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="image-container">
-          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
-        </div>
-        <div class="info">
-          <p class="name">Project 1</p>
-          <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="image-container">
-          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
-        </div>
-        <div class="info">
-          <p class="name">Project 1</p>
-          <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
-        </div>
-      </div><div class="project-card">
-        <div class="image-container">
-          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
-        </div>
-        <div class="info">
-          <p class="name">Project 1</p>
-          <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="image-container">
-          <img src="./project-thumbnails/thumbnail1.jpg" alt="Project 1">
-        </div>
-        <div class="info">
-          <p class="name">Project 1</p>
-          <p class="details">Project details</p>
-          <button class="view-button">View Details</button>
+          <button class="details-btn">View Details</button>
         </div>
       </div>
     </div>
+    <div id="popupContainer" class="popup-container">
+      <div class="popup">
+          <button id="closePopup" class="close-btn">&times;</button>
+          <h2>Popup Title</h2>
+          
+      </div>
+  </div>
   </section>
 </body>
 <script>
