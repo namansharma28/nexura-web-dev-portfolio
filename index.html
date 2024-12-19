@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Design</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexura Club</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
     <nav class="navbar">
-        <div class="logo">
-            <!-- Add your logo image here -->
-            <img src="logo.png" alt="Logo" class="logo-img">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-item">Home</a></li>
-            <li><a href="about.html" class="nav-item">About</a></li>
-            <li><a href="project.html" class="nav-item">Projects</a></li>
-            <li><a href="team.html" class="nav-item">Team</a></li>
-            <li><a href="contact.html" class="nav-item">Contact</a></li>
-        </ul>
+      <div class="logo">
+        <img
+          src="./logo.png"
+          alt="Nexura Logo"
+        />
+        <span>Nexura</span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="act" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-    <img src="logo1.png" class="logo-large">
-    <section class="portfolio-section">
-        <div class="content-wrapper">
-          <h1 class="portfolio-title">
-            <strong>Welcome to Nexura</strong>
-          </h1>
-          <p class="portfolio-description">
-            Nexura is the official club of the Automobile Engineering Department at UIT-RGPV, Bhopal.
 
-          </p>
-          <p class="portfolio-description">
-            We are a hub of innovation, creativity, and technology, with five departments specializing in design, animation, simulation, web development, and management.
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-          </p>
-          <p>
-            Join us to learn, create, and lead as we shape the future of engineering and design!
-          </p>
-          <div class="button-container">
-            <a href="#work" class="explore-btn">Explore Our Work &nbsp; &#x279E;</a>
-          </div>
-        </div>
-      </section>
-</body>
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <section class="container">
+      <!-- Video Section -->
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source
+            src="./logos/logovdo.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <div class="content">
+        <h1>Welcome to Nexura!</h1>
+        <p>
+          Nexura is the official club of the Automobile Engineering Department
+          at UIT-RGPV, Bhopal. We are a hub of innovation, creativity, and
+          technology, with five departments specializing in design, animation,
+          simulation, web development, and management. Join us to learn, create,
+          and lead as we shape the future of engineering and design!
+        </p>
+        <a href="./html/contact.html" class="btn">Join Us</a>
+      </div>
+    </section>
+  </body>
 </html>

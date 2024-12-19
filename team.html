@@ -11,17 +11,36 @@
   <!-- Team Section -->
   <nav class="navbar">
     <div class="logo">
-        <!-- Add your logo image here -->
-        <img src="logo.png" alt="Logo" class="logo-img">
+      <img
+        src="./logo.png"
+        alt="Nexura Logo"
+      />
+      <span>Nexura</span>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-item">Home</a></li>
-      <li><a href="about.html" class="nav-item">About</a></li>
-      <li><a href="project.html" class="nav-item">Projects</a></li>
-      <li><a href="team.html" class="nav-item">Team</a></li>
-      <li><a href="contact.html" class="nav-item">Contact</a></li>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a class="act" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
   <section class="team-section">
     <h1 class="section-title">The talented individuals behind our project, showcasing their skills, roles, and passion for innovation.</h1>
     <div class="team-container">

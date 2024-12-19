@@ -1,95 +1,175 @@
-/* General Reset */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background-color: #741a9e; /* Purple background */
-    color: #fff;
-    line-height: 1.6;
-  }
-  
-  /* Section Wrapper */
-  .portfolio-section {
-    padding: 50px 20px;
-    text-align: left;
-  }
-  .logo-large {
-    height: 500px;
-    z-index: -10;
-    position: absolute;
-    left:-20%;
-  }
-  .content-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Title Styling */
-  .portfolio-title {
-    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #271540; 
+      color: white;
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+.act{
+    color: #e58900;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  .portfolio-title strong {
-    text-decoration: underline;
-  }
-  
-  /* Paragraph Styling */
-  .portfolio-description {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Button Styling */
-  .button-container {
-    margin-top: 1.5rem;
-  }
-  
-  .explore-btn {
-    display: inline-block;
-    background-color: #97929993; /* Orange button */
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
     text-decoration: none;
-    font-weight: bold;
+    color: white;
     font-size: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: purple;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
     transition: all 0.3s ease;
-  }
-  
-  .explore-btn:hover {
-    background-color: #e28310; /* Darker orange on hover */
-    transform: scale(1.05);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .portfolio-title {
-      font-size: 1.8rem;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    .hamburger {
+        display: flex;
     }
-  
-    .portfolio-description {
-      font-size: 1rem;
+
+   
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
     }
-  
-    .explore-btn {
-      font-size: 0.9rem;
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+   
+    .container {
+      display: flex;
+     margin-top: 4rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .video-container {
+      flex: 1;
+      min-width: 300px; 
+      margin-right: 20px;
+    }
+
+    .video-container video {
+      width: 100%;
+      border-radius: 10px; 
+    }
+
+    .content {
+      flex: 1;
+      min-width: 300px;
+      text-align: left;
+      font-size: larger;
+    }
+
+    .content h1 {
+      font-size: 2.5em;
+      margin-bottom: 45px;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    /* Button Styling */
+    .btn {
+      display: inline-block;
+      text-align: center;
       padding: 10px 20px;
+      background-color: #ff9f00;
+      width: 8rem;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .portfolio-title {
-      font-size: 1.5rem;
+
+    .btn:hover {
+      background-color: #e58900;
     }
-  
-    .portfolio-description {
-      font-size: 0.9rem;
+
+   
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .video-container {
+        margin-bottom: 20px;
+      }
     }
-  }
-  
