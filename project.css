@@ -104,18 +104,22 @@
   @media (max-width: 768px) {
     .project-card {
       min-width: 60vw;
-      max-width: 60vw;
+      max-width: 80vw;
     }
   
     .section-title {
-      font-size: 2rem;
+      font-size: 1rem;
+      width: 75%;
+    }
+    .image-container img {
+      width: 100%;
     }
   }
   
   @media (min-width: 1200px) {
     .project-card {
       min-width: 20vw;
-      max-width: 20vw;
+      max-width: 30vw;
     }
   }
   

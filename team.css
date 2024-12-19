@@ -87,6 +87,7 @@
   
     .section-title {
       font-size: 1rem;
+      padding-bottom: 0;
     }
     
   }
@@ -101,11 +102,11 @@
   
     .team-card {
       width: 90%;
-      margin: 1rem 0;
+      margin: 1.8rem 0;
     }
   
     .section-title {
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
   }
   
