@@ -62,7 +62,7 @@
   
   .image-container img {
     width: 100%;
-    height: auto;
+    height: 15em;
     border-radius: 1rem;
   }
   
@@ -151,8 +151,18 @@
     position: relative;
     text-align: center;
     overflow-y: auto; 
+    max-width: 1000px; /* Added max-width for better video viewing */
 }
 
+.video-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.video-container video {
+    max-width: 100%;
+    border-radius: 8px;
+}
 
 .close-btn {
     position: absolute;
